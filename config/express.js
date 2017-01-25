@@ -30,7 +30,8 @@ module.exports = function () {
     app.use(bodyParser.json());
     app.use(cors());
 
-    require('../app/routes')(app);
+    // require('../app/routes')(app);
+    require('../app/routes/user.routes')(app);
 
     app.use(express.static('./public'));
 
