@@ -1,9 +1,15 @@
-const User = require('../models/user');
-const config = require('../../config/config');
+const User = require('../../models/user');
+const config = require('../../../config/config');
 const jwt = require('jsonwebtoken');
 
+function generateToken(user){
+    return jwt.sign(user, config.secret, {
+        expiresIn: 10080
+    });
+}
+
 exports.signup =  function(req, res) {
-    console.log(req.body);
+
     if(!req.body.email || !req.body.password) {
         res.status(400).json({ success: false, message: 'Please enter email and password.' });
     } else {
@@ -23,6 +29,7 @@ exports.signup =  function(req, res) {
 };
 
 exports.signin =  function(req, res) {
+
     User.findOne({
         email: req.body.email
     }, function (err, user) {
@@ -35,9 +42,7 @@ exports.signin =  function(req, res) {
             user.comparePassword(req.body.password, function (err, isMatch) {
                 if (isMatch && !err) {
                     // Create token if the password matched and no error was thrown
-                    const token = jwt.sign(user, config.secret, {
-                        expiresIn: 10080 // in seconds
-                    });
+                    const token = generateToken(user);
                     res.status(200).json({success: true, token: 'JWT ' + token});
                 } else {
                     res.status(401).json({success: false, message: 'Authentication failed. Passwords did not match.'});
@@ -45,21 +50,4 @@ exports.signin =  function(req, res) {
             });
         }
     });
-};
-
-exports.profile =  function(req, res) {
-
-    User.findOne({
-        _id: req.user._id
-    },	function(err,user){
-        if (err) {
-            return next(err);
-        }else{
-            res.status(200).json({
-                success: true,
-                email: user.email
-            });
-        }
-    });
-
 };

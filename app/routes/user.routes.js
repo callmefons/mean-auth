@@ -1,19 +1,22 @@
 const express = require('express');
 const passport = require('passport');
-const user = require('../controllers/user.controller');
-const requireAuth = passport.authenticate('jwt', { session: false });
+const user = require('../controllers/users/user.server.controller');
 
 module.exports = function (app) {
 
-    const apiRoutes = express.Router();
     const requireAuth = passport.authenticate('jwt', { session: false });
+    var     apiRoutes   = express.Router(),
+            authRoutes  = express.Router(),
+            userRoutes  = express.Router();
 
-    apiRoutes.post('/signup',user.signup);
-    apiRoutes.post('/signin',user.signin);
+    // authenticated
+    apiRoutes.use('/auth', authRoutes);
+    authRoutes.post('/signup',user.signup);
+    authRoutes.post('/signin',user.signin);
 
-    // GET messages for authenticated user
-    apiRoutes.route('/user')
-        .get(requireAuth,user.profile);
+    // user profile
+    apiRoutes.use('/user', userRoutes);
+    userRoutes.get('/profile', requireAuth, user.roleAuthorization(['Client']), user.profile);
 
     app.use('/api', apiRoutes);
 };
