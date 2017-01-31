@@ -17,8 +17,9 @@ const UserSchema = new mongoose.Schema({
     type: String,
     enum: ['Client', 'Manager', 'Admin'],
     default: 'Client'
-  }
-});
+  },
+    properties:{},
+},{strict:false});
 
 // Saves the user's password hashed (plain text password storage is not good)
 UserSchema.pre('save', function (next) {
