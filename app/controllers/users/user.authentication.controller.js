@@ -1,10 +1,12 @@
 const User = require('../../models/user');
 const config = require('../../../config/config');
 const jwt = require('jsonwebtoken');
+var storage = require('node-persist');
 
 function generateToken(user){
     return jwt.sign(user, config.secret, {
-        expiresIn: 10080
+        // expiresIn: 10080
+        expiresIn: 60
     });
 }
 
@@ -39,7 +41,11 @@ exports.signin =  function(req, res) {
                 if (isMatch && !err) {
                     // Create token if the password matched and no error was thrown
                     const token = generateToken(user);
-                    res.status(200).json({success: true, token: 'JWT ' + token});
+                    storage.initSync();
+
+                    //then start using it
+                    storage.setItemSync('name',token);
+                    res.status(200).json({success: true, token: storage.getItemSync('name')});
                 } else {
                     res.status(401).json({success: false, message: 'Authentication failed. Passwords did not match.'});
                 }
@@ -47,3 +53,17 @@ exports.signin =  function(req, res) {
         }
     });
 };
+
+
+
+exports.isLogin = function (req,res) {
+    //console.log(req.body.token)
+    jwt.verify(req.body.token, config.secret,function (err,decode){
+       if(err) {
+           return res.status(401).json({isLogin: false, err: err})
+       }else{
+           return res.status(200).json({isLogin: true, exp:decode.exp})
+       }
+    });
+};
+

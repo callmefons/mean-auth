@@ -13,10 +13,12 @@ module.exports = function (app) {
     apiRoutes.use('/auth', authRoutes);
     authRoutes.post('/signup',user.signup);
     authRoutes.post('/signin',user.signin);
+    authRoutes.post('/isLogin',user.isLogin);
 
     // user profile
     apiRoutes.use('/user', userRoutes);
     userRoutes.get('/profile', requireAuth, user.roleAuthorization(['Client']), user.profile);
+    userRoutes.get('/', user.index);
 
     app.use('/api', apiRoutes);
 };
