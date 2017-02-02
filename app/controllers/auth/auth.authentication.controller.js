@@ -1,31 +1,41 @@
-const User = require('../../models/user');
-const config = require('../../../config/config');
-const jwt = require('jsonwebtoken');
+import jwt from 'jsonwebtoken';
+import httpStatus from 'http-status';
+import User from '../../models/user';
+import config from '../../../config/config';
 
 function generateToken(user){
-    return jwt.sign(user.email, config.secret, {
+    return jwt.sign(user, config.secret, {
         expiresIn: 60
     });
 }
-
-function signup (req, res, next) {
-    var data = req.body;
+/**
+ * Create a Create new user
+ * Use this method to register users to you core app.
+ * @property {string} req.body.email - The email of user.
+ * @property {string} req.body.password - The password of user.
+ * @returns {User}
+ */
+function signup (req, res) {
+    let data = req.body;
     if(!req.body.email || !req.body.password) {
-        res.status(400).json({ success: false, message: 'Please enter email and password.' });
+        res.status(httpStatus.BAD_REQUEST).json({ success: false, message: 'Please enter email and password.' });
     } else {
         const newUser = new User(data);
-
-        newUser.save((err) =>
-        {
-            if (err) {
-                return res.status(400).json({ success: false, message: err.message});
-            }
-
-            res.status(201).json({ success: true, message: 'Successfully created new user.', data:data });
-        });
+        newUser.save()
+            .then(saveUser => res.status(httpStatus.CREATED).json({ message: 'Successfully created new user.' }))
+            .catch(err => res.status(httpStatus.BAD_REQUEST).json({ message: err.message}));
     }
-};
+}
 
+/**
+ * Authenticate a user
+ * Authenticate with email and password
+ * Returns jwt token if valid username and password is provided
+ * @param req
+ * @param res
+ * @param next
+ * @returns {*}
+ */
 function signin(req, res, next) {
 
     User.findOne({
@@ -34,37 +44,38 @@ function signin(req, res, next) {
         if (err) throw err;
 
         if (!user) {
-            res.status(401).json({success: false, message: 'Authentication failed. User not found.'});
+            res.status(httpStatus.UNAUTHORIZED).json({ message:'Authentication failed. User not found.' });
         } else {
-            // Check if password matches
             user.comparePassword(req.body.password, function (err, isMatch) {
                 if (isMatch && !err) {
-                    // Create token if the password matched and no error was thrown
-                    var token = jwt.sign({
-                        user
-                    },config.secret);
-                    res.status(200).json({success: true, token});
+                    let token = jwt.sign({user},config.secret);
+                    res.status(httpStatus.OK).json({user: user.email, token});
                 } else {
-                    res.status(401).json({success: false, message: 'Authentication failed. Passwords did not match.'});
+                    res.status(httpStatus.NOT_FOUND).json({
+                        message: 'Authentication failed. Passwords did not match.'
+                    });
                 }
             });
         }
     });
-};
+}
 
-
-
-function isLogin (req,res) {
-    //console.log(req.body.token)
+/**
+ * Check login status
+ * This method will return true if there is a local auth token. False otherwise.
+ * @param req
+ * @param res
+ * @returns {*}
+ */
+function isLoggedIn (req,res) {
     jwt.verify(req.body.token, config.secret,function (err,decode){
        if(err) {
-           return res.status(401).json({isLogin: false, err: err})
+           return res.status(httpStatus.UNAUTHORIZED).json({isLoggedIn: false, err: err})
        }else{
-           return res.status(200).json({isLogin: true, exp:decode.exp})
+           return res.status(httpStatus.OK).json({isLoggedIn: true, exp:decode.exp})
        }
     });
-};
+}
 
-
-export default {signup, signin, isLogin}
+export default {signup, signin, isLoggedIn}
 

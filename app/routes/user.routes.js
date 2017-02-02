@@ -11,7 +11,7 @@ module.exports = function (app) {
 
     authRoutes.post('/signup', auth.signup);
     authRoutes.post('/signin', auth.signin);
-    authRoutes.post('/isLogin', auth.isLogin);
+    authRoutes.post('/isLogin', auth.isLoggedIn);
 
     app.use('/api', apiRoutes);
 };

@@ -1,28 +1,23 @@
-var _ = require('lodash');
-const User = require('../../models/user');
+import httpStatus from 'http-status';
+import User from '../../models/user';
 
-exports.roleAuthorization = function(roles){
-
+function roleAuthorization(roles) {
     return function(req, res, next){
-
         var user = req.user;
-
         User.findById(user._id, function(err, foundUser){
-
             if(err){
-                res.status(422).json({error: 'No user found.'});
+                res.status(httpStatus.NOT_FOUND).json({message: 'No user found.'});
                 return next(err);
             }
-
             if(roles.indexOf(foundUser.role) > -1){
                 return next();
             }
-
-            res.status(401).json({error: 'You are not authorized to view this content'});
+            res.status(httpStatus.UNAUTHORIZED).json({message: 'You are not authorized to view this content'});
             return next('Unauthorized');
 
         });
 
     }
+}
 
-};
+export default {roleAuthorization}
