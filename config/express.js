@@ -1,11 +1,10 @@
-// Include our packages in our main server file
-const express = require('express');
-const mongoose = require('mongoose');
-const bodyParser = require('body-parser');
-const morgan = require('morgan');
-const passport = require('passport');
-const config = require('./config');
-const cors = require('cors');
+import express from 'express';
+import logger from 'morgan';
+import bodyParser from 'body-parser';
+import passport from 'passport';
+import cors from 'cors';
+import helmet from 'helmet';
+
 const port = 3000;
 
 module.exports = function () {
@@ -14,7 +13,7 @@ module.exports = function () {
 
     // Log requests to console
     if(process.env.NODE_ENV === 'development'){
-        app.use(morgan('dev'))
+        app.use(logger('dev'));
     }else{
         app.use(compression);
     }
@@ -28,6 +27,11 @@ module.exports = function () {
     // Use body-parser to get POST requests for API use
     app.use(bodyParser.urlencoded({ extended: true }));
     app.use(bodyParser.json());
+
+    // secure apps by setting various HTTP headers
+    app.use(helmet());
+
+    // enable CORS - Cross Origin Resource Sharing
     app.use(cors());
 
     // require('../app/routes')(app);
