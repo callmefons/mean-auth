@@ -20,7 +20,7 @@ module.exports = function (app) {
 
     authRoutes.post('/signup', _authServer2.default.signup);
     authRoutes.post('/signin', _authServer2.default.signin);
-    authRoutes.post('/isLogin', _authServer2.default.isLoggedIn);
+    authRoutes.post('/isLoggedIn', _authServer2.default.isLoggedIn);
 
     app.use('/api', apiRoutes);
 };
