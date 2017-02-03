@@ -56,7 +56,7 @@ module.exports = function () {
     app.use((0, _cors2.default)());
 
     // require('../app/routes')(app);
-    require('../app/routes/user.routes')(app);
+    require('../app/routes/index.routes')(app);
 
     app.use(_express2.default.static('./public'));
 

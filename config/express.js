@@ -35,7 +35,7 @@ module.exports = function () {
     app.use(cors());
 
     // require('../app/routes')(app);
-    require('../app/routes/user.routes')(app);
+    require('../app/routes/index.routes')(app);
 
     app.use(express.static('./public'));
 

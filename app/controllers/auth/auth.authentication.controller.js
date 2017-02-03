@@ -8,24 +8,6 @@ function generateToken(user){
         expiresIn: 60
     });
 }
-/**
- * Create a Create new user
- * Use this method to register users to you core app.
- * @property {string} req.body.email - The email of user.
- * @property {string} req.body.password - The password of user.
- * @returns {User}
- */
-function signup (req, res) {
-    let data = req.body;
-    if(!req.body.email || !req.body.password) {
-        res.status(httpStatus.BAD_REQUEST).json({ success: false, message: 'Please enter email and password.' });
-    } else {
-        const newUser = new User(data);
-        newUser.save()
-            .then(saveUser => res.status(httpStatus.CREATED).json({ message: 'Successfully created new user.' }))
-            .catch(err => res.status(httpStatus.BAD_REQUEST).json({ message: err.message}));
-    }
-}
 
 /**
  * Authenticate a user
@@ -72,10 +54,10 @@ function isLoggedIn (req,res) {
        if(err) {
            return res.status(httpStatus.UNAUTHORIZED).json({isLoggedIn: false, err: err})
        }else{
-           return res.status(httpStatus.OK).json({isLoggedIn: true, exp:decode.exp})
+           return res.status(httpStatus.OK).json({isLoggedIn: true, user:decode})
        }
     });
 }
 
-export default {signup, signin, isLoggedIn}
+export default {signin, isLoggedIn}
 

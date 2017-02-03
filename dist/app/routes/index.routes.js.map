@@ -1,0 +1,1 @@
+{"version":3,"sources":["app/routes/index.routes.js"],"names":["module","exports","app","apiRouter","Router","use"],"mappings":";;AAAA;;;;AACA;;;;;;AAEAA,OAAOC,OAAP,GAAiB,UAAUC,GAAV,EAAe;;AAE5B,QAAMC,YAAc,kBAAQC,MAAR,EAApB;;AAEAD,cAAUE,GAAV,CAAc,OAAd;;AAEAH,QAAIG,GAAJ,CAAQ,MAAR,EAAgBF,SAAhB;AACH,CAPD","file":"index.routes.js","sourceRoot":"../../../../.."}

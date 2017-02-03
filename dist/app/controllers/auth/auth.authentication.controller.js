@@ -27,26 +27,6 @@ function generateToken(user) {
         expiresIn: 60
     });
 }
-/**
- * Create a Create new user
- * Use this method to register users to you core app.
- * @property {string} req.body.email - The email of user.
- * @property {string} req.body.password - The password of user.
- * @returns {User}
- */
-function signup(req, res) {
-    var data = req.body;
-    if (!req.body.email || !req.body.password) {
-        res.status(_httpStatus2.default.BAD_REQUEST).json({ success: false, message: 'Please enter email and password.' });
-    } else {
-        var newUser = new _user2.default(data);
-        newUser.save().then(function (saveUser) {
-            return res.status(_httpStatus2.default.CREATED).json({ message: 'Successfully created new user.' });
-        }).catch(function (err) {
-            return res.status(_httpStatus2.default.BAD_REQUEST).json({ message: err.message });
-        });
-    }
-}
 
 /**
  * Authenticate a user
@@ -93,11 +73,11 @@ function isLoggedIn(req, res) {
         if (err) {
             return res.status(_httpStatus2.default.UNAUTHORIZED).json({ isLoggedIn: false, err: err });
         } else {
-            return res.status(_httpStatus2.default.OK).json({ isLoggedIn: true, exp: decode.exp });
+            return res.status(_httpStatus2.default.OK).json({ isLoggedIn: true, user: decode });
         }
     });
 }
 
-exports.default = { signup: signup, signin: signin, isLoggedIn: isLoggedIn };
+exports.default = { signin: signin, isLoggedIn: isLoggedIn };
 module.exports = exports['default'];
 //# sourceMappingURL=auth.authentication.controller.js.map
