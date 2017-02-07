@@ -7,6 +7,7 @@ const router = express.Router();
 
 router.route('/signin')
     .post(validate(paramValidation.signin),auth.signin);
-router.route('/isLoggedIn').post(auth.isLoggedIn);
+router.route('/isLoggedIn')
+    .post(auth.isLoggedIn);
 
 export default router;

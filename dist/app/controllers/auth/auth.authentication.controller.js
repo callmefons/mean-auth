@@ -20,6 +20,10 @@ var _config = require('../../../config/config');
 
 var _config2 = _interopRequireDefault(_config);
 
+var _expressJwt = require('express-jwt');
+
+var _expressJwt2 = _interopRequireDefault(_expressJwt);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function generateToken(user) {
@@ -69,7 +73,7 @@ function signin(req, res, next) {
  * @returns {*}
  */
 function isLoggedIn(req, res) {
-    _jsonwebtoken2.default.verify(req.body.token, _config2.default.secret, function (err, decode) {
+    _jsonwebtoken2.default.verify(req.headers['authorization'], _config2.default.secret, function (err, decode) {
         if (err) {
             return res.status(_httpStatus2.default.UNAUTHORIZED).json({ isLoggedIn: false, err: err });
         } else {
@@ -77,7 +81,6 @@ function isLoggedIn(req, res) {
         }
     });
 }
-
 exports.default = { signin: signin, isLoggedIn: isLoggedIn };
 module.exports = exports['default'];
 //# sourceMappingURL=auth.authentication.controller.js.map

@@ -2,6 +2,7 @@ import jwt from 'jsonwebtoken';
 import httpStatus from 'http-status';
 import User from '../../models/user';
 import config from '../../../config/config';
+import expressjwt from 'express-jwt';
 
 function generateToken(user){
     return jwt.sign(user, config.secret, {
@@ -50,7 +51,7 @@ function signin(req, res, next) {
  * @returns {*}
  */
 function isLoggedIn (req,res) {
-    jwt.verify(req.body.token, config.secret,function (err,decode){
+    jwt.verify(req.headers['authorization'], config.secret,function (err,decode){
        if(err) {
            return res.status(httpStatus.UNAUTHORIZED).json({isLoggedIn: false, err: err})
        }else{
@@ -58,6 +59,5 @@ function isLoggedIn (req,res) {
        }
     });
 }
-
 export default {signin, isLoggedIn}
 

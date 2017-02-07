@@ -9,12 +9,13 @@ const port = 3000;
 
 module.exports = function () {
 
-    var app  = express();
+
+    var app = express();
 
     // Log requests to console
-    if(process.env.NODE_ENV === 'development'){
+    if (process.env.NODE_ENV === 'development') {
         app.use(logger('dev'));
-    }else{
+    } else {
         app.use(compression);
     }
 
@@ -25,7 +26,7 @@ module.exports = function () {
     require('./passport')();
 
     // Use body-parser to get POST requests for API use
-    app.use(bodyParser.urlencoded({ extended: true }));
+    app.use(bodyParser.urlencoded({extended: false}));
     app.use(bodyParser.json());
 
     // secure apps by setting various HTTP headers

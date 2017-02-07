@@ -46,7 +46,7 @@ module.exports = function () {
     require('./passport')();
 
     // Use body-parser to get POST requests for API use
-    app.use(_bodyParser2.default.urlencoded({ extended: true }));
+    app.use(_bodyParser2.default.urlencoded({ extended: false }));
     app.use(_bodyParser2.default.json());
 
     // secure apps by setting various HTTP headers
