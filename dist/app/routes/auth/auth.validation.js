@@ -12,7 +12,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 exports.default = {
     // POST /api/auth/signin
-    signin: {
+    login: {
         body: {
             email: _joi2.default.string().required().email(),
             password: _joi2.default.string().required().regex(/^[a-zA-Z0-9]{3,30}$/)

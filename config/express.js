@@ -9,7 +9,6 @@ const port = 3000;
 
 module.exports = function () {
 
-
     var app = express();
 
     // Log requests to console

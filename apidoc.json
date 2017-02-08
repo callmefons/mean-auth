@@ -1,0 +1,14 @@
+{
+  "name": "Authentication API documentation",
+  "version": "0.1.0",
+  "title": "Authentication REST API",
+  "template": {
+    "forceLanguage": "en",
+    "withCompare": false,
+    "withGenerator": false
+  },
+  "header": {
+    "title": "Introduction",
+    "filename": "header.md"
+  }
+}

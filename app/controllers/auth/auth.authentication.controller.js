@@ -2,7 +2,6 @@ import jwt from 'jsonwebtoken';
 import httpStatus from 'http-status';
 import User from '../../models/user';
 import config from '../../../config/config';
-import expressjwt from 'express-jwt';
 
 function generateToken(user){
     return jwt.sign(user, config.secret, {
@@ -10,16 +9,8 @@ function generateToken(user){
     });
 }
 
-/**
- * Authenticate a user
- * Authenticate with email and password
- * Returns jwt token if valid username and password is provided
- * @param req
- * @param res
- * @param next
- * @returns {*}
- */
-function signin(req, res, next) {
+
+function login(req, res, next) {
 
     User.findOne({
         email: req.body.email
@@ -27,15 +18,19 @@ function signin(req, res, next) {
         if (err) throw err;
 
         if (!user) {
-            res.status(httpStatus.UNAUTHORIZED).json({ message:'Authentication failed. User not found.' });
+            res.status(httpStatus.UNAUTHORIZED).json({
+                message:'Authentication failed. Invalid login.',
+                code:httpStatus.UNAUTHORIZED,
+            });
         } else {
             user.comparePassword(req.body.password, function (err, isMatch) {
                 if (isMatch && !err) {
                     let token = jwt.sign({user},config.secret);
-                    res.status(httpStatus.OK).json({user: user.email, token});
+                    res.status(httpStatus.CREATED).json({token,user});
                 } else {
-                    res.status(httpStatus.NOT_FOUND).json({
-                        message: 'Authentication failed. Passwords did not match.'
+                    res.status(httpStatus.UNAUTHORIZED).json({
+                        message: 'Authentication failed. Invalid login.',
+                        code:httpStatus.UNAUTHORIZED
                     });
                 }
             });
@@ -43,13 +38,7 @@ function signin(req, res, next) {
     });
 }
 
-/**
- * Check login status
- * This method will return true if there is a local auth token. False otherwise.
- * @param req
- * @param res
- * @returns {*}
- */
+
 function isLoggedIn (req,res) {
     jwt.verify(req.headers['authorization'], config.secret,function (err,decode){
        if(err) {
@@ -59,5 +48,5 @@ function isLoggedIn (req,res) {
        }
     });
 }
-export default {signin, isLoggedIn}
+export default {login, isLoggedIn}
 

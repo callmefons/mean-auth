@@ -1,5 +1,5 @@
 module.exports = {
     'debug': true,
-    'secret': 'longobnoxiouspassphrase',
+    'secret': 'ecommerce',
     'mongoUri': 'mongodb://localhost/ecommerce'
 };
