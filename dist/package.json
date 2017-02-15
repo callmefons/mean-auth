@@ -1,5 +1,5 @@
 {
-  "name": "saas",
+  "name": "authentication",
   "main": "server.js",
   "scripts": {
     "start": "gulp serve",

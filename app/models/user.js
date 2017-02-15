@@ -2,7 +2,6 @@ const mongoose = require('mongoose');
 const validate = require('mongoose-validator');
 const bcrypt = require('bcrypt');
 
-
 var nameValidator = [
     validate({
         validator: 'isLength',

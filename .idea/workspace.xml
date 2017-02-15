@@ -2,46 +2,298 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5bf66a13-1cf6-4b84-bcea-d2198a23d586" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apidoc.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/header.md" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/app/controllers/auth/auth.authentication.controller.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/app/controllers/auth/auth.authentication.controller.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/app/controllers/auth/auth.authorization.controller.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/app/controllers/auth/auth.authorization.controller.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/app/controllers/auth/auth.server.controller.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/app/controllers/auth/auth.server.controller.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/app/models/user.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/app/models/user.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/app/routes/auth/auth.routes.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/app/routes/auth/auth.routes.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/app/routes/auth/auth.validation.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/app/routes/auth/auth.validation.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/app/routes/index.routes.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/app/routes/index.routes.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/config/config.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/config/config.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/config/env/development.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/config/env/development.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/config/env/production.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/config/env/production.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/config/express.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/config/express.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/config/mongoose.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/config/mongoose.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/config/passport.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/config/passport.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/config/strategies/local.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/config/strategies/local.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/server.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/server.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/api_data.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/api_data.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/api_project.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/api_project.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/locales/ca.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/locales/ca.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/locales/de.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/locales/de.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/locales/es.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/locales/es.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/locales/fr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/locales/fr.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/locales/it.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/locales/it.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/locales/locale.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/locales/locale.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/locales/nl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/locales/nl.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/locales/pl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/locales/pl.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/locales/pt_br.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/locales/pt_br.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/locales/ro.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/locales/ro.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/locales/ru.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/locales/ru.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/locales/zh.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/locales/zh.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/locales/zh_cn.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/locales/zh_cn.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/main.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/main.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/utils/handlebars_helper.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/utils/handlebars_helper.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/utils/send_sample_request.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/utils/send_sample_request.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/bootstrap.min.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/diff_match_patch.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/diff_match_patch.min.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/handlebars.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/handlebars.min.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/jquery.min.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/list.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/list.min.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/lodash.custom.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/lodash.custom.min.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/path-to-regexp/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/path-to-regexp/index.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/polyfill.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/polyfill.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-Splus.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-Splus.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-aea.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-aea.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-agc.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-agc.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-apollo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-apollo.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-basic.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-basic.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-cbm.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-cbm.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-cl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-cl.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-clj.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-clj.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-css.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-css.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-dart.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-dart.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-el.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-el.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-erl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-erl.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-erlang.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-erlang.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-fs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-fs.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-go.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-go.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-hs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-hs.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-lasso.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-lasso.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-lassoscript.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-lassoscript.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-latex.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-latex.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-lgt.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-lgt.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-lisp.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-lisp.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-ll.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-ll.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-llvm.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-llvm.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-logtalk.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-logtalk.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-ls.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-ls.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-lsp.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-lsp.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-lua.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-lua.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-matlab.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-matlab.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-ml.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-ml.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-mumps.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-mumps.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-n.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-n.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-nemerle.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-nemerle.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-pascal.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-pascal.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-proto.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-proto.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-r.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-r.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-rd.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-rd.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-rkt.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-rkt.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-rust.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-rust.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-s.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-s.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-scala.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-scala.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-scm.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-scm.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-sql.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-sql.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-ss.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-ss.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-swift.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-swift.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-tcl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-tcl.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-tex.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-tex.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-vb.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-vb.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-vbs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-vbs.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-vhd.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-vhd.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-vhdl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-vhdl.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-wiki.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-wiki.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-xq.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-xq.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-xquery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-xquery.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-yaml.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-yaml.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-yml.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/lang-yml.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/prettify.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/prettify.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/run_prettify.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/prettify/run_prettify.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/require.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/require.min.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/semver.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/semver.min.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/webfontloader.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/public/apidoc/vendor/webfontloader.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/api_data.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/api_data.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/api_project.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/api_project.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/css/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/fonts/glyphicons-halflings-regular.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/fonts/glyphicons-halflings-regular.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/fonts/glyphicons-halflings-regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/img/favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/locales/ca.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/locales/de.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/locales/es.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/locales/fr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/locales/it.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/locales/locale.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/locales/nl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/locales/pl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/locales/pt_br.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/locales/ro.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/locales/ru.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/locales/zh.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/locales/zh_cn.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/main.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/utils/handlebars_helper.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/utils/send_sample_request.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/vendor/bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/vendor/bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/vendor/diff_match_patch.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/vendor/handlebars.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/vendor/jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/vendor/list.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/vendor/lodash.custom.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/vendor/path-to-regexp/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/vendor/path-to-regexp/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/vendor/polyfill.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/vendor/prettify.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/vendor/prettify/lang-Splus.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/vendor/prettify/lang-aea.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/vendor/prettify/lang-agc.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/vendor/prettify/lang-apollo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/vendor/prettify/lang-basic.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/vendor/prettify/lang-cbm.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/vendor/prettify/lang-cl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/vendor/prettify/lang-clj.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/vendor/prettify/lang-css.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/vendor/prettify/lang-dart.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/vendor/prettify/lang-el.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/vendor/prettify/lang-erl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/vendor/prettify/lang-erlang.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/vendor/prettify/lang-fs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/vendor/prettify/lang-go.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/vendor/prettify/lang-hs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/vendor/prettify/lang-lasso.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/vendor/prettify/lang-lassoscript.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/vendor/prettify/lang-latex.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/vendor/prettify/lang-lgt.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/vendor/prettify/lang-lisp.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/vendor/prettify/lang-ll.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/vendor/prettify/lang-llvm.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/vendor/prettify/lang-logtalk.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/vendor/prettify/lang-ls.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/vendor/prettify/lang-lsp.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/vendor/prettify/lang-lua.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/vendor/prettify/lang-matlab.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/vendor/prettify/lang-ml.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/vendor/prettify/lang-mumps.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/vendor/prettify/lang-n.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/vendor/prettify/lang-nemerle.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/vendor/prettify/lang-pascal.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/vendor/prettify/lang-proto.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/vendor/prettify/lang-r.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/vendor/prettify/lang-rd.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/vendor/prettify/lang-rkt.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/vendor/prettify/lang-rust.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/vendor/prettify/lang-s.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/vendor/prettify/lang-scala.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/vendor/prettify/lang-scm.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/vendor/prettify/lang-sql.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/vendor/prettify/lang-ss.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/vendor/prettify/lang-swift.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/vendor/prettify/lang-tcl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/vendor/prettify/lang-tex.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/vendor/prettify/lang-vb.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/vendor/prettify/lang-vbs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/vendor/prettify/lang-vhd.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/vendor/prettify/lang-vhdl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/vendor/prettify/lang-wiki.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/vendor/prettify/lang-xq.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/vendor/prettify/lang-xquery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/vendor/prettify/lang-yaml.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/vendor/prettify/lang-yml.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/vendor/prettify/prettify.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/vendor/prettify/prettify.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/vendor/prettify/run_prettify.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/vendor/require.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/vendor/semver.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/apidoc/vendor/webfontloader.js" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/saas-tutorial.iml" afterPath="$PROJECT_DIR$/.idea/auth.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/auth/auth.authentication.controller.js" afterPath="$PROJECT_DIR$/app/controllers/auth/auth.authentication.controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.js" afterPath="$PROJECT_DIR$/app/models/user.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routes/auth/auth.routes.js" afterPath="$PROJECT_DIR$/app/routes/auth/auth.routes.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routes/auth/auth.validation.js" afterPath="$PROJECT_DIR$/app/routes/auth/auth.validation.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/env/development.js" afterPath="$PROJECT_DIR$/config/env/development.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/express.js" afterPath="$PROJECT_DIR$/config/express.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/env/production.js" afterPath="$PROJECT_DIR$/config/env/production.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/app/models/user.js.map" afterPath="$PROJECT_DIR$/dist/app/models/user.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/app/routes/auth/auth.routes.js" afterPath="$PROJECT_DIR$/dist/app/routes/auth/auth.routes.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/app/routes/auth/auth.routes.js.map" afterPath="$PROJECT_DIR$/dist/app/routes/auth/auth.routes.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/config/env/development.js" afterPath="$PROJECT_DIR$/dist/config/env/development.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/config/env/development.js.map" afterPath="$PROJECT_DIR$/dist/config/env/development.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/config/env/production.js" afterPath="$PROJECT_DIR$/dist/config/env/production.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/config/env/production.js.map" afterPath="$PROJECT_DIR$/dist/config/env/production.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/package.json" afterPath="$PROJECT_DIR$/dist/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/server.js" afterPath="$PROJECT_DIR$/dist/server.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/server.js.map" afterPath="$PROJECT_DIR$/dist/server.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server.js" afterPath="$PROJECT_DIR$/server.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -65,8 +317,30 @@
       <file leaf-file-name="auth.authentication.controller.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/auth/auth.authentication.controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="7" column="12" lean-forward="false" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+            <state relative-caret-position="150">
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#31#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="server.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -75,32 +349,10 @@
       <file leaf-file-name="auth.authorization.controller.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/auth/auth.authorization.controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="4" column="36" lean-forward="false" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="auth.routes.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/routes/auth/auth.routes.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="32" lean-forward="true" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
+            <state relative-caret-position="90">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
               <folding>
-                <element signature="e#0#30#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="apidoc.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apidoc.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-              <folding>
-                <marker date="1486530936000" expanded="true" signature="0:285" ph="{&quot;name&quot;: &quot;Authentication API documentation&quot;...}" />
+                <element signature="e#0#37#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -109,62 +361,61 @@
       <file leaf-file-name="development.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/env/development.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <state relative-caret-position="60">
+              <caret line="4" column="16" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/header.md">
+      <file leaf-file-name="production.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/env/production.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="10" lean-forward="false" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+            <state relative-caret-position="60">
+              <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/apidoc/css/style.css">
+      <file leaf-file-name="auth.server.controller.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/auth/auth.server.controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="58" column="4" lean-forward="false" selection-start-line="58" selection-start-column="4" selection-end-line="58" selection-end-column="4" />
+            <state relative-caret-position="105">
+              <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="passport.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/passport.js">
+      <file leaf-file-name="index.routes.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/routes/index.routes.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="31" lean-forward="false" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="31" />
+            <state relative-caret-position="120">
+              <caret line="9" column="31" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="local.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/strategies/local.js">
+      <file leaf-file-name="user.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/user.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="18" lean-forward="false" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+            <state relative-caret-position="255">
+              <caret line="74" column="27" selection-start-line="74" selection-start-column="27" selection-end-line="74" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="auth.routes.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/routes/auth/auth.routes.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
               <folding>
-                <marker date="1486456707000" expanded="true" signature="359:838" ph="{...}" />
-                <marker date="1486456707000" expanded="true" signature="542:832" ph="{...}" />
+                <element signature="e#0#30#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/config.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="9" lean-forward="false" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -195,7 +446,6 @@
       <list>
         <option value="$PROJECT_DIR$/config/passport.js" />
         <option value="$PROJECT_DIR$/config/config.js" />
-        <option value="$PROJECT_DIR$/config/env/production.js" />
         <option value="$PROJECT_DIR$/app/routes.js" />
         <option value="$PROJECT_DIR$/app/controllers/user.controller.js" />
         <option value="$PROJECT_DIR$/app/controllers/users/user.controller.js" />
@@ -207,7 +457,6 @@
         <option value="$PROJECT_DIR$/gulpfile.babel.js" />
         <option value="$PROJECT_DIR$/app/controllers/auth/auth.server.controller.js" />
         <option value="$PROJECT_DIR$/app/controllers/auth/auth.profile.controller.js" />
-        <option value="$PROJECT_DIR$/server.js" />
         <option value="$PROJECT_DIR$/config/mongoose.js" />
         <option value="$PROJECT_DIR$/app/helpers/APIError.js" />
         <option value="$PROJECT_DIR$/app/controllers/auth/auth.authorization.controller.js" />
@@ -215,16 +464,18 @@
         <option value="$PROJECT_DIR$/app/routes/index.routes.js" />
         <option value="$PROJECT_DIR$/app/routes/auth.routes.js" />
         <option value="$PROJECT_DIR$/config/param-validation.js" />
-        <option value="$PROJECT_DIR$/app/models/user.js" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/config/express.js" />
         <option value="$PROJECT_DIR$/app/routes/auth/auth.validation.js" />
         <option value="$PROJECT_DIR$/config/strategies/local.js" />
         <option value="$PROJECT_DIR$/app/controllers/auth/auth.authentication.controller.js" />
-        <option value="$PROJECT_DIR$/config/env/development.js" />
-        <option value="$PROJECT_DIR$/app/routes/auth/auth.routes.js" />
         <option value="$PROJECT_DIR$/apidoc.json" />
         <option value="$PROJECT_DIR$/header.md" />
+        <option value="$PROJECT_DIR$/app/routes/auth/auth.routes.js" />
+        <option value="$PROJECT_DIR$/app/models/user.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/config/env/development.js" />
+        <option value="$PROJECT_DIR$/config/env/production.js" />
+        <option value="$PROJECT_DIR$/server.js" />
       </list>
     </option>
   </component>
@@ -246,10 +497,19 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="93" />
-    <option name="y" value="195" />
-    <option name="width" value="1312" />
-    <option name="height" value="876" />
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="788" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -266,165 +526,29 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="mean-auth" />
+              <option name="myItemId" value="auth" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mean-auth" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mean-auth" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mean-auth" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="apidoc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mean-auth" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mean-auth" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="apidoc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mean-auth" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mean-auth" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mean-auth" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mean-auth" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="strategies" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mean-auth" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mean-auth" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="env" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mean-auth" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mean-auth" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="build" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mean-auth" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mean-auth" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="routes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mean-auth" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mean-auth" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="routes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="auth" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mean-auth" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="mean-auth" />
+              <option name="myItemId" value="auth" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -438,7 +562,25 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
+              <option name="myItemId" value="auth" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="mean-auth" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="auth" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -460,13 +602,11 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../mean-account" />
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
@@ -494,12 +634,6 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
-      <config-file value="" />
-      <node-interpreter value="project" />
-      <envs />
-      <method />
-    </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
       <method />
     </configuration>
@@ -522,7 +656,7 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
-      <command value="run" />
+      <command value="run-script" />
       <scripts />
       <node-interpreter value="project" />
       <envs />
@@ -563,24 +697,25 @@
       <workItem from="1486351437164" duration="4782000" />
       <workItem from="1486394756451" duration="1640000" />
       <workItem from="1486437830750" duration="16131000" />
+      <workItem from="1487129834941" duration="1803000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78549000" />
+    <option name="totallyTimeSpent" value="80352000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="93" y="195" width="1312" height="876" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="788" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23702556" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24031007" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5291202" sideWeight="0.503992" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28316328" sideWeight="0.49600798" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24626866" sideWeight="0.49600798" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -609,7 +744,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -617,14 +752,14 @@
     <entry file="file://$PROJECT_DIR$/server.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
-          <caret line="3" column="44" lean-forward="false" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="44" />
+          <caret line="3" column="44" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="44" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/routes/auth/auth.routes.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="21" selection-end-column="2" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="21" selection-end-column="2" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
           </folding>
@@ -634,14 +769,14 @@
     <entry file="file://$PROJECT_DIR$/config/strategies/local.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
-          <caret line="11" column="28" lean-forward="false" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/auth/auth.server.controller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="4" column="3" lean-forward="false" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+          <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
           <folding />
         </state>
       </provider>
@@ -649,9 +784,9 @@
     <entry file="file://$PROJECT_DIR$/app/controllers/auth/auth.authentication.controller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#31#0" expanded="false" />
+            <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -659,9 +794,9 @@
     <entry file="file://$PROJECT_DIR$/app/controllers/auth/auth.authorization.controller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="7" column="7" lean-forward="false" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
           <folding>
-            <element signature="e#0#37#0" expanded="false" />
+            <element signature="e#0#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -669,14 +804,14 @@
     <entry file="file://$PROJECT_DIR$/config/passport.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
-          <caret line="16" column="39" lean-forward="false" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
+          <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/mongoose.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="5" column="45" lean-forward="false" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
+          <caret line="5" column="45" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
         </state>
       </provider>
     </entry>
@@ -684,24 +819,21 @@
     <entry file="file://$PROJECT_DIR$/config/express.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
-          <caret line="15" column="45" lean-forward="false" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#30#0" expanded="false" />
-          </folding>
+          <caret line="15" column="45" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
-          <caret line="3" column="44" lean-forward="false" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="44" />
+          <caret line="3" column="44" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="44" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/routes/auth/auth.routes.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="7" column="27" lean-forward="false" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
           </folding>
@@ -711,14 +843,14 @@
     <entry file="file://$PROJECT_DIR$/config/strategies/local.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
-          <caret line="11" column="28" lean-forward="false" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/auth/auth.server.controller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="4" column="3" lean-forward="false" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+          <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
           <folding />
         </state>
       </provider>
@@ -726,9 +858,9 @@
     <entry file="file://$PROJECT_DIR$/app/controllers/auth/auth.authentication.controller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="7" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <caret line="0" column="7" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding>
-            <element signature="e#0#31#0" expanded="false" />
+            <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -736,9 +868,9 @@
     <entry file="file://$PROJECT_DIR$/app/controllers/auth/auth.authorization.controller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="7" column="7" lean-forward="false" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
           <folding>
-            <element signature="e#0#37#0" expanded="false" />
+            <element signature="e#0#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -746,14 +878,14 @@
     <entry file="file://$PROJECT_DIR$/config/passport.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
-          <caret line="16" column="39" lean-forward="false" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
+          <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/mongoose.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="5" column="45" lean-forward="false" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
+          <caret line="5" column="45" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
         </state>
       </provider>
     </entry>
@@ -761,7 +893,7 @@
     <entry file="file://$PROJECT_DIR$/build/config.gypi">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="31" column="27" lean-forward="false" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
+          <caret line="31" column="27" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -769,7 +901,7 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -781,85 +913,31 @@
     <entry file="file://$PROJECT_DIR$/gulpfile.babel.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="735">
-          <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/helpers/APIError.js" />
     <entry file="file://$PROJECT_DIR$/dist/app/helpers/APIError.js" />
     <entry file="file://$PROJECT_DIR$/config/param-validation.js" />
-    <entry file="file://$PROJECT_DIR$/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/user.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="534">
-          <caret line="64" column="15" lean-forward="false" selection-start-line="64" selection-start-column="15" selection-end-line="64" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/env/production.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/auth/auth.server.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="22" lean-forward="false" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LICENSE">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="28" lean-forward="false" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="28" />
-          <folding />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/mongoose.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="5" column="6" lean-forward="false" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#30#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/routes/index.routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="31" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#30#0" expanded="false" />
-          </folding>
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/routes/auth/auth.validation.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="10" column="2" lean-forward="false" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
+          <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
           <folding />
         </state>
       </provider>
@@ -867,17 +945,14 @@
     <entry file="file://$PROJECT_DIR$/config/express.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#30#0" expanded="false" />
-          </folding>
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/passport.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
-          <caret line="16" column="31" lean-forward="false" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="31" />
+          <caret line="16" column="31" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="31" />
           <folding />
         </state>
       </provider>
@@ -885,18 +960,7 @@
     <entry file="file://$PROJECT_DIR$/config/strategies/local.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
-          <caret line="15" column="18" lean-forward="false" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
-          <folding>
-            <marker date="1486456707000" expanded="true" signature="359:838" ph="{...}" />
-            <marker date="1486456707000" expanded="true" signature="542:832" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/auth/auth.authorization.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="4" column="36" lean-forward="false" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
+          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
           <folding />
         </state>
       </provider>
@@ -904,15 +968,7 @@
     <entry file="file://$PROJECT_DIR$/config/config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="9" lean-forward="false" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/env/development.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <caret line="0" column="9" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
           <folding />
         </state>
       </provider>
@@ -920,17 +976,15 @@
     <entry file="file://$PROJECT_DIR$/apidoc.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding>
-            <marker date="1486530936000" expanded="true" signature="0:285" ph="{&quot;name&quot;: &quot;Authentication API documentation&quot;...}" />
-          </folding>
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/apidoc/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="58" column="4" lean-forward="false" selection-start-line="58" selection-start-column="4" selection-end-line="58" selection-end-column="4" />
+        <state relative-caret-position="870">
+          <caret line="58" column="4" selection-start-line="58" selection-start-column="4" selection-end-line="58" selection-end-column="4" />
           <folding />
         </state>
       </provider>
@@ -938,26 +992,94 @@
     <entry file="file://$PROJECT_DIR$/header.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
-          <caret line="2" column="10" lean-forward="false" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+          <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/auth/auth.authentication.controller.js">
+    <entry file="file://$PROJECT_DIR$/app/routes/index.routes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="7" column="12" lean-forward="false" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+        <state relative-caret-position="120">
+          <caret line="9" column="31" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/routes/auth/auth.routes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="32" lean-forward="true" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
+        <state relative-caret-position="150">
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/env/development.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/env/production.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/user.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="74" column="27" selection-start-line="74" selection-start-column="27" selection-end-line="74" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/auth/auth.authentication.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/auth/auth.authorization.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/auth/auth.server.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>

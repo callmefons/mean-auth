@@ -1,13 +1,15 @@
 process.env.NODE_ENV = process.env.NODE_ENV || 'development';
-var mongoose = require('./config/mongoose');
-var express = require('./config/express');
-var passport = require('./config/passport');
 
-var db = mongoose();
-var app = express();
+const mongoose = require('./config/mongoose');
+const express = require('./config/express');
+const passport = require('./config/passport');
+const config = require('./config/config');
+
+const db = mongoose();
+const app = express();
 passport();
 
-app.listen(3000);
+app.listen(config.port);
 module.exports = app;
 
-console.log("Server running at http://localhost:3000");
+console.log(`Server running at http://localhost:${config.port}`);
